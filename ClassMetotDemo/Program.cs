@@ -6,7 +6,14 @@ namespace ClassMetotDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Musteri musteri = new Musteri();
+            musteri.Ad = "Erdinç";
+            musteri.Soyad = "Akdemir";
+            musteri.Id = 12358;
+
+            MusteriManager musteriManager = new MusteriManager();
+            musteriManager.Ekle(musteri);
+            musteriManager.Sil(musteri);
         }
     }
 }
